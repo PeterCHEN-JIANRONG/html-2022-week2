@@ -1,0 +1,45 @@
+.header {
+  height: 958px;
+  background: url(/image/banner.png);
+  background-size:cover;
+  background-position: center cneter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__wrap {
+    color: white;
+    font-style: italic;
+
+    .title {
+      font-size: 80px;
+      line-height: 106px;
+      font-weight: 900;
+      margin-bottom: 32px;
+    }
+
+    .subtitle {
+      font-style: 24px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    .small {
+      font-size: 24px;
+      line-height: 42px;
+      font-weight: 700;
+    }
+
+    .social {
+      display: flex;
+      gap: 16px;
+
+      &__link {
+        transition: all 0.4s;
+        &:hover{
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
