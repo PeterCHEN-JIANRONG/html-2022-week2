@@ -1,0 +1,65 @@
+// 首頁
+.index {
+
+  // section title 樣式
+  .about,.brand,.other {
+    .title {
+      font-size: 64px;
+      line-height: 84px;
+    }
+  }
+
+
+  .about {
+    text-align: center;
+    .title {
+      margin-bottom: 40px;
+    }
+
+    .photo {
+      margin-bottom: 20px;
+    }
+
+    .introduction,.experience {
+      line-height: 42px;
+      font-weight: 700;
+      .school {
+        line-height: 1.5;
+      }
+    }
+    
+    .line {
+      max-width: 384px;
+      border-bottom:none;
+      border-left: none;
+      border-right: none;
+      border-top: 1px solid #000;
+      margin-top: 24px;
+      margin-bottom: 28px;
+    }
+
+    .experience {
+      margin-bottom: 56px;
+
+      .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+          display: inline-block;
+          content: '';
+          width: 22px;
+          height: 22px;
+          background: #891818;
+          margin-right: 16px;
+          border-radius: 100%;
+        }
+      }
+
+      li:not(:last-child) {
+        margin-bottom: 28px;
+      }
+    }
+  }
+}

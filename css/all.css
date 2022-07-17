@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -68,16 +67,12 @@ body {
   font-size: 24px;
   line-height: 1.5;
   font-weight: 500;
-  font-family: "SF Pro Text", "蘋方-繁", sans-serif;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-}
-
-.container-sm {
-  max-width: 996px;
   margin: 0 auto;
 }
 
@@ -98,7 +93,6 @@ body {
 }
 .header__wrap {
   color: white;
-  font-style: italic;
 }
 .header__wrap .title {
   font-size: 80px;
@@ -107,12 +101,10 @@ body {
   margin-bottom: 32px;
 }
 .header__wrap .subtitle {
-  font-style: 24px;
   font-weight: 700;
   margin-bottom: 40px;
 }
 .header__wrap .small {
-  font-size: 24px;
   line-height: 42px;
   font-weight: 700;
 }
@@ -135,15 +127,10 @@ body {
   background: #000;
   padding: 64px 0;
   text-align: center;
-  font-weight: 500;
-  font-style: italic;
 }
 .footer .title {
   font-size: 64px;
   line-height: 84px;
-}
-.footer .contact {
-  font-size: 24px;
 }
 .footer .contact li:not(:last-child) {
   margin-bottom: 16px;
@@ -156,6 +143,66 @@ body {
 }
 .footer .contact__link:hover {
   color: blue;
+}
+
+.index .about .title, .index .brand .title, .index .other .title {
+  font-size: 64px;
+  line-height: 84px;
+}
+.index .about {
+  text-align: center;
+}
+.index .about .title {
+  margin-bottom: 40px;
+}
+.index .about .photo {
+  margin-bottom: 20px;
+}
+.index .about .introduction, .index .about .experience {
+  line-height: 42px;
+  font-weight: 700;
+}
+.index .about .introduction .school, .index .about .experience .school {
+  line-height: 1.5;
+}
+.index .about .line {
+  max-width: 384px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #000;
+  margin-top: 24px;
+  margin-bottom: 28px;
+}
+.index .about .experience {
+  margin-bottom: 56px;
+}
+.index .about .experience .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.index .about .experience .text::before {
+  display: inline-block;
+  content: "";
+  width: 22px;
+  height: 22px;
+  background: #891818;
+  margin-right: 16px;
+  border-radius: 100%;
+}
+.index .about .experience li:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.mb-1 {
+  margin-bottom: 4px;
 }
 
 .mb-2 {
