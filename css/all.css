@@ -94,32 +94,32 @@ body {
 .header__wrap {
   color: white;
 }
-.header__wrap .title {
+.header__title {
   font-size: 80px;
   line-height: 106px;
   font-weight: 900;
   margin-bottom: 32px;
 }
-.header__wrap .subtitle {
+.header__subtitle {
   font-weight: 700;
   margin-bottom: 40px;
 }
-.header__wrap .small {
+.header__small {
   line-height: 42px;
   font-weight: 700;
 }
-.header__wrap .social {
+.header .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 16px;
 }
-.header__wrap .social__link {
+.header .social__link {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
-.header__wrap .social__link:hover {
-  opacity: 0.8;
+.header .social__link:hover {
+  opacity: 0.7;
 }
 
 .footer {
@@ -128,9 +128,10 @@ body {
   padding: 64px 0;
   text-align: center;
 }
-.footer .title {
+.footer__title {
   font-size: 64px;
   line-height: 84px;
+  margin-bottom: 16px;
 }
 .footer .contact li:not(:last-child) {
   margin-bottom: 16px;
@@ -145,24 +146,26 @@ body {
   color: blue;
 }
 
-.index .about .title, .index .brand .title, .index .other .title {
+.index .about__title, .index .brand__title, .index .other__title {
   font-size: 64px;
   line-height: 84px;
 }
 .index .about {
+  padding-top: 56px;
+  padding-bottom: 56px;
   text-align: center;
 }
-.index .about .title {
+.index .about__title {
   margin-bottom: 40px;
 }
-.index .about .photo {
+.index .about__photo {
   margin-bottom: 20px;
 }
-.index .about .introduction, .index .about .experience {
+.index .about__introduction, .index .about__experience {
   line-height: 42px;
   font-weight: 700;
 }
-.index .about .introduction .school, .index .about .experience .school {
+.index .about__introduction .school, .index .about__experience .school {
   line-height: 1.5;
 }
 .index .about .line {
@@ -174,10 +177,7 @@ body {
   margin-top: 24px;
   margin-bottom: 28px;
 }
-.index .about .experience {
-  margin-bottom: 56px;
-}
-.index .about .experience .text {
+.index .about__experience .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,7 +188,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.index .about .experience .text::before {
+.index .about__experience .text::before {
   display: inline-block;
   content: "";
   width: 22px;
@@ -197,7 +197,7 @@ body {
   margin-right: 16px;
   border-radius: 100%;
 }
-.index .about .experience li:not(:last-child) {
+.index .about__experience li:not(:last-child) {
   margin-bottom: 28px;
 }
 .index .brand {
@@ -206,16 +206,16 @@ body {
   padding-top: 56px;
   padding-bottom: 160px;
 }
-.index .brand .title {
+.index .brand__title {
   text-align: center;
   margin-bottom: 12px;
 }
-.index .brand .subtitle {
+.index .brand__subtitle {
   text-align: center;
   line-height: 42px;
   margin-bottom: 32px;
 }
-.index .brand .text {
+.index .brand__text {
   text-align: center;
   font-size: 20px;
   margin-bottom: 68px;
@@ -242,11 +242,12 @@ body {
   padding-top: 56px;
   padding-bottom: 144px;
   text-align: center;
+  font-size: 20px;
 }
-.index .other .title {
+.index .other__title {
   margin-bottom: 16px;
 }
-.index .other .subtitle {
+.index .other__subtitle {
   margin-bottom: 56px;
 }
 .index .other__list {
@@ -262,6 +263,14 @@ body {
 }
 .index .other__list img {
   margin-bottom: 16px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.index .other__list img:hover {
+  opacity: 0.7;
+}
+.index .other__list h4 {
+  line-height: 42px;
 }
 
 .mb-1 {

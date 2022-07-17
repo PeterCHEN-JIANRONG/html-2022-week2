@@ -9,33 +9,33 @@
 
   &__wrap {
     color: white;
+  }
 
-    .title {
-      font-size: 80px;
-      line-height: 106px;
-      font-weight: 900;
-      margin-bottom: 32px;
-    }
+  &__title {
+    font-size: 80px;
+    line-height: 106px;
+    font-weight: 900;
+    margin-bottom: 32px;
+  }
 
-    .subtitle {
-      font-weight: 700;
-      margin-bottom: 40px;
-    }
+  &__subtitle {
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
 
-    .small {
-      line-height: 42px;
-      font-weight: 700;
-    }
+  &__small {
+    line-height: 42px;
+    font-weight: 700;
+  }
 
-    .social {
-      display: flex;
-      gap: 16px;
+  .social {
+    display: flex;
+    gap: 16px;
 
-      &__link {
-        transition: all 0.4s;
-        &:hover{
-          opacity: 0.8;
-        }
+    &__link {
+      transition: all 0.4s;
+      &:hover{
+        opacity: 0.7;
       }
     }
   }

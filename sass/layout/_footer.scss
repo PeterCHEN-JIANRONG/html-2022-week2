@@ -5,9 +5,10 @@
   padding: 64px 0;
   text-align: center;
 
-  .title {
+  &__title {
     font-size: 64px;
     line-height: 84px;
+    margin-bottom: 16px;
   }
 
   .contact {
