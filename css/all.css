@@ -78,9 +78,9 @@ body {
 
 .header {
   height: 958px;
-  background: url(/image/banner.png);
+  background: url("https://github.com/PeterCHEN-JIANRONG/html-2022-week2/blob/main/image/banner.png?raw=true");
   background-size: cover;
-  background-position: center cneter;
+  background-position: center center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
