@@ -1,11 +1,11 @@
 .header {
-  height: 958px;
+  padding-top: 308px;
+  padding-bottom: 308px;
   background: url("https://github.com/PeterCHEN-JIANRONG/html-2022-week2/blob/main/image/banner.png?raw=true");
   background-size:cover;
   background-position: center center;
   display: flex;
   justify-content: center;
-  align-items: center;
 
   &__wrap {
     color: white;
