@@ -1,140 +1,138 @@
 // 首頁
-.index {
 
-  // section title 樣式
-  .about,.brand,.other {
-    &__title {
-      font-size: 64px;
-      line-height: 84px;
-    }
+// section title 樣式
+.about,.brand,.other {
+  &__title {
+    font-size: 64px;
+    line-height: 84px;
+  }
+}
+
+
+.about {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 40px;
   }
 
+  &__photo {
+    margin-bottom: 20px;
+  }
 
-  .about {
-    padding-top: 56px;
-    padding-bottom: 56px;
-    text-align: center;
-
-    &__title {
-      margin-bottom: 40px;
+  &__introduction,&__experience {
+    line-height: 42px;
+    font-weight: 700;
+    .school {
+      line-height: 1.5;
     }
+  }
+  
+  .line {
+    max-width: 384px;
+    border-bottom:none;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #000;
+    margin-top: 24px;
+    margin-bottom: 28px;
+  }
 
-    &__photo {
-      margin-bottom: 20px;
-    }
+  &__experience {
 
-    &__introduction,&__experience {
-      line-height: 42px;
-      font-weight: 700;
-      .school {
-        line-height: 1.5;
+    .text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &::before {
+        display: inline-block;
+        content: '';
+        width: 22px;
+        height: 22px;
+        background: #891818;
+        margin-right: 16px;
+        border-radius: 100%;
       }
     }
-    
-    .line {
-      max-width: 384px;
-      border-bottom:none;
-      border-left: none;
-      border-right: none;
-      border-top: 1px solid #000;
-      margin-top: 24px;
+
+    li:not(:last-child) {
       margin-bottom: 28px;
     }
+  }
+}
 
-    &__experience {
+.brand {
+  background: #000;
+  color: white;
+  padding-top: 56px;
+  padding-bottom: 160px;
 
-      .text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
-        &::before {
-          display: inline-block;
-          content: '';
-          width: 22px;
-          height: 22px;
-          background: #891818;
-          margin-right: 16px;
-          border-radius: 100%;
-        }
-      }
-
-      li:not(:last-child) {
-        margin-bottom: 28px;
-      }
-    }
+  &__title {
+    text-align: center;
+    margin-bottom: 12px;
   }
 
-  .brand {
-    background: #000;
-    color: white;
-    padding-top: 56px;
-    padding-bottom: 160px;
-
-
-    &__title {
-      text-align: center;
-      margin-bottom: 12px;
-    }
-
-    &__subtitle {
-      text-align: center;
-      line-height: 42px;
-      margin-bottom: 32px;
-    }
-
-    &__text {
-      text-align: center;
-      font-size: 20px;
-      margin-bottom: 68px;
-    }
-
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      row-gap: 40px;
-
-      img {
-        transition: all 0.5s;
-        &:hover {
-          opacity: 0.7;
-        }
-      }
-    }
+  &__subtitle {
+    text-align: center;
+    line-height: 42px;
+    margin-bottom: 32px;
   }
 
-  .other {
-    padding-top: 56px;
-    padding-bottom: 144px;
+  &__text {
     text-align: center;
     font-size: 20px;
+    margin-bottom: 68px;
+  }
 
-    &__title {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+
+    img {
+      transition: all 0.5s;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.other {
+  padding-top: 56px;
+  padding-bottom: 144px;
+  text-align: center;
+  font-size: 20px;
+
+  &__title {
+    margin-bottom: 16px;
+  }
+  
+  &__subtitle {
+    margin-bottom: 56px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 48px;
+
+    img {
       margin-bottom: 16px;
-    }
-    
-    &__subtitle {
-      margin-bottom: 56px;
-    }
-
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      row-gap: 48px;
-
-      img {
-        margin-bottom: 16px;
-        transition: all 0.5s;
-        &:hover {
-          opacity: 0.7;
-        }
+      transition: all 0.5s;
+      &:hover {
+        opacity: 0.7;
       }
+    }
 
-      h4 {
-        line-height: 42px;
-      }
+    h4 {
+      line-height: 42px;
     }
   }
 }
